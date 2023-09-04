@@ -1,0 +1,25 @@
+<!--components/nav-bar/nav-bar.wxml-->
+<view class="nav-bar">
+    <!-- 撑开手机状态高度，避免遮挡 -->
+    <view class="status" style="height: {{statusHeight}}px;"></view>
+    <view class="nav">
+        <view class="left" bind:tap="onLeftClick">
+            <view class="slot">
+                <slot name="left"></slot>
+            </view>
+            <view class="default">
+                <image class="icon" src="/assets/images/icons/arrow-left.png" mode=""/>
+            </view>
+        </view>
+        <view class="center">
+            <view class="slot">
+                <slot name="center"></slot>
+            </view>
+            <view class="default">
+                {{title}}
+            </view>
+        </view>
+        <!-- 小程序右边顶部是默认的两个按钮，这里隔出空间 -->
+        <view class="right"></view>
+    </view>
+</view>

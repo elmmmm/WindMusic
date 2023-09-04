@@ -1,0 +1,27 @@
+/* pages/detail-video/detail-video.wxss */
+page{
+    /* video组件的默认高度为225px */
+    padding-top: 450rpx; 
+}
+.video {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+.info{
+    padding: 30rpx;
+}
+.info .title{
+    font-weight: 700;
+}
+.info .desc, .info .other{
+    font-size: 26rpx;
+    margin-top: 10rpx;
+    color: #666;
+}
+
+.recommend {
+    padding: 30rpx;
+}

@@ -1,0 +1,14 @@
+<!--components/related-video-item/related-video-item.wxml-->
+<wxs src="../../utils/format.wxs" module="format" ></wxs>
+<view class="item">
+  <view class="album">
+    <image class="image" mode="widthFix" src="{{itemInfo.cover}}"></image>
+    <view class="info">
+      <text class="count">{{format.formatTime(itemInfo.duration)}}</text>
+    </view>
+  </view>
+  <view class="content">
+    <view class="title">{{itemInfo.name}}</view>
+    <view class="nickname">{{itemInfo.artistName}}</view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-search": "@vant/weapp/search/index",
+        "area-header": "/components/area-header/area-header",
+        "song-item-v1": "/components/song-item-v1/song-item-v1",
+        "menu-area": "/components/menu-area/menu-area",
+        "ranking-item": "/components/ranking-item/raking-item"
+    },
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "侧耳倾听"
+}

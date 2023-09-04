@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "video-item": "/components/video-item/video-item"
+    },
+    "navigationBarTitleText": "满眼星辰",
+    "enablePullDownRefresh": true
+}

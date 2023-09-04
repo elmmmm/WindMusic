@@ -1,0 +1,56 @@
+{
+    "pages": [
+        "pages/main-music/main-music",
+        "pages/main-video/main-video",
+        "pages/detail-search/detail-search",
+        "pages/detail-menu/detail-menu",
+        "pages/detail-song/detail-song",
+        "pages/main-profile/main-profile"
+    ],
+    "tabBar": {
+        "selectedColor": "#ff898",
+        "list": [
+            {
+                "pagePath": "pages/main-music/main-music",
+                "text": "音乐",
+                "iconPath": "assets/images/tabbar/music_normal.png",
+                "selectedIconPath": "assets/images/tabbar/music_active.png"
+            },
+            {
+                "pagePath": "pages/main-video/main-video",
+                "text": "视频",
+                "iconPath": "assets/images/tabbar/video_normal.png",
+                "selectedIconPath": "assets/images/tabbar/video_active.png"
+            },
+            {
+                "pagePath": "pages/main-profile/main-profile",
+                "text": "我的",
+                "iconPath": "assets/images/tabbar/profile_normal.png",
+                "selectedIconPath": "assets/images/tabbar/profile_active.png"
+            }
+        ]
+    },
+    "subpackages": [
+        {
+            "root": "packageVideo",
+            "name": "video",
+            "pages": [
+                "pages/detail-video/detail-video"
+            ]
+        },
+        {
+            "root": "packagePlayer",
+            "name": "player",
+            "pages": [
+                "pages/music-player/music-player"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WindMusic",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+}

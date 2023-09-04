@@ -1,0 +1,16 @@
+<!--pages/detail-menu/detail-menu.wxml-->
+<view class="all-menu">
+    <block wx:for="{{ songMenus }}" wx:key="cat">
+        <view class="cat">
+            <area-header title="{{ item.cat }}" hasMore="{{false}}"></area-header>
+            <view class="list">
+                <!-- 使用for嵌套列表渲染时，通过wx:for-item对遍历元素起别名-->
+                <block wx:for="{{ item.playlists }}" wx:key="id" wx:for-item="iten">
+                    <view class="iten">
+                        <menu-item itemData="{{ iten }}"></menu-item>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>

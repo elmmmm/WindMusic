@@ -1,0 +1,20 @@
+<!--pages/detail-song/detail-song.wxml-->
+<!-- 歌单展示列表时，顶部为一个封面，排行榜没有封面 -->
+<view class="header" wx:if="{{ type === 'menu' && songInfo.name }}">
+    <menu-header songInfo="{{songInfo}}"></menu-header>
+</view>
+<view class="title" wx:else>{{songInfo.name}}</view>
+
+<view class="song-list">
+    <block wx:for="{{songInfo.tracks}}" wx:key="id">
+        <song-item-v2 
+            itemData="{{item}}"
+            index="{{index+1}}"
+            menuList="{{menuList}}"
+            iconshow="{{ type!='profile'}}"
+            data-index="{{index}}"
+            bind:tap="onSongItemTap"
+        >
+        </song-item-v2>
+    </block>
+</view>
